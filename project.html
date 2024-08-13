@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f06, #4a90e2);
+            animation: gradient 15s ease infinite;
+            color: #fff;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        header li {
+            float: left;
+            margin-right: 20px;
+        }
+
+        header #branding h1 {
+            margin: 0;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        #projects {
+            margin: 20px 0;
+        }
+
+        #projects h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .project {
+            background: #fff;
+            color: #333;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .project h3 {
+            margin-top: 0;
+        }
+
+        .project img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .project p {
+            font-size: 16px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>My Projects</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <img src="project1.jpg" alt="Project 1 Image">
+                <p>Description of project 1. This project involves creating a responsive web design using HTML, CSS, and JavaScript.</p>
+                <button id="show-more-project1">Show More</button>
+                <div id="hidden-content-project1" style="display: none;">
+                    <p>This project aims to develop a web application that allows users to search and explore research papers from the arXiv repository. The application will provide functionalities beyond basic search, such as:
+                        PDF Summarization: Utilizing natural language processing techniques, the application will offer summaries of research papers, allowing users to quickly grasp the key points without reading the entire document.
+                        Favorites List: Users can save interesting papers to a personalized favorites list for easier access and future reference.
+                        Author Search: Users can search for papers by specific authors, exploring their research contributions in detail.
+                        Enhanced User Interface: The application will employ a modern and intuitive user interface with features like dark mode and text highlighting for improved user experience.</p>
+                    <button id="show-less-project1">Show Less</button>
+                </div>
+                <script>
+                    document.getElementById('show-more-project1').addEventListener('click', function() {
+                        document.getElementById('hidden-content-project1').style.display = 'block';
+                        this.style.display = 'none';
+                        document.getElementById('show-less-project1').style.display = 'block';
+                    });
+        
+                    document.getElementById('show-less-project1').addEventListener('click', function() {
+                        document.getElementById('hidden-content-project1').style.display = 'none';
+                        this.style.display = 'none';
+                        document.getElementById('show-more-project1').style.display = 'block';
+                    });
+                </script>
+            </div>
+            <div class="project">
+                <h3>Research Paper Summarization</h3>
+                <img src="image/project2.0.png" alt="Research Paper Summarization">
+                <p>1. Introduction
+                    This project aims to develop a web application that allows users to search and explore research papers from the arXiv repository. The application will provide functionalities beyond basic search, such as:
+                    PDF Summarization: Utilizing natural language processing techniques, the application will offer summaries of research papers, allowing users to quickly grasp the key points without reading the entire document.
+                    Favorites List: Users can save interesting papers to a personalized favorites list for easier access and future reference.
+                    Author Search: Users can search for papers by specific authors, exploring their research contributions in detail.
+                    Enhanced User Interface: The application will employ a modern and intuitive user interface with features like dark mode and text highlighting for improved user experience.</p>
+                <button id="show-more-project2">Show More</button>
+                <div id="hidden-content-project2" style="display: none;">
+                    <img src="image/project2.1.png" alt="Project 2 Image">
+                    <img src="image/project2.3.png" alt="Project 2 Image">
+                    <img src="image/project2.2.png" alt="Project 2 Image">
+                    <img src="image/project2.4.png" alt="Project 2 Image">
+            
+                    <p>2. Abstract
+                        This project addresses the challenges researchers face when navigating the vast 
+                        amount of information available on arXiv. The web application will streamline the 
+                        research process by providing tools for efficient exploration, comprehension, and organization of research papers. 
+                        By leveraging natural language processing and a user-friendly design, the application empowers 
+                        users to effectively discover and analyze relevant research in their fields.</p>
+                        
+                    <button id="show-less-project2">Show Less</button>
+                </div>
+                <script>
+                    document.getElementById('show-more-project2').addEventListener('click', function() {
+                        document.getElementById('hidden-content-project2').style.display = 'block';
+                        this.style.display = 'none';
+                        document.getElementById('show-less-project2').style.display = 'block';
+                    });
+
+                    document.getElementById('show-less-project2').addEventListener('click', function() {
+                        document.getElementById('hidden-content-project2').style.display = 'none';
+                        this.style.display = 'none';
+                        document.getElementById('show-more-project2').style.display = 'block';
+                    });
+                </script>
+            </div>
+            
+            <div class="project">
+                <h3>Project 3</h3>
+                <img src="project3.jpg" alt="Project 3 Image">
+                <p>Description of project 3. This project is a machine learning model for predicting house prices based on various features.</p>
+                <button id="show-more-project3">Show More</button>
+                <div id="hidden-content-project3" style="display: none;">
+                    <img src="image/project3.1.png" alt="Project 3 Image">
+                    <img src="image/project3.2.png" alt="Project 3 Image">
+                    <p>More details about project 3. This project leverages advanced machine learning algorithms to analyze various factors affecting house prices, providing accurate predictions for real estate investors and homeowners.</p>
+                    <button id="show-less-project3">Show Less</button>
+                </div>
+                <script>
+                    document.getElementById('show-more-project3').addEventListener('click', function() {
+                        document.getElementById('hidden-content-project3').style.display = 'block';
+                        this.style.display = 'none';
+                        document.getElementById('show-less-project3').style.display = 'block';
+                    });
+
+                    document.getElementById('show-less-project3').addEventListener('click', function() {
+                        document.getElementById('hidden-content-project3').style.display = 'none';
+                        this.style.display = 'none';
+                        document.getElementById('show-more-project3').style.display = 'block';
+                    });
+                </script>
+            </div>
+            <div class="project">
+                <h3>Project 4</h3>
+                <img src="project4.jpg" alt="Project 4 Image">
+                <p>Description of project 4. This project is a mobile application developed using Flutter for tracking fitness activities.</p>
+                <button id="show-more-project4">Show More</button>
+                <div id="hidden-content-project4" style="display: none;">
+                    <p>More details about project 4. This project leverages advanced machine learning algorithms to analyze various factors affecting house prices, providing accurate predictions for real estate investors and homeowners.</p>
+                    <button id="show-less-project4">Show Less</button>
+                </div>
+                <script>
+                    document.getElementById('show-more-project4').addEventListener('click', function() {
+                        document.getElementById('hidden-content-project4').style.display = 'block';
+                        this.style.display = 'none';
+                        document.getElementById('show-less-project4').style.display = 'block';
+                    });
+
+                    document.getElementById('show-less-project4').addEventListener('click', function() {
+                        document.getElementById('hidden-content-project4').style.display = 'none';
+                        this.style.display = 'none';
+                        document.getElementById('show-more-project4').style.display = 'block';
+                    });
+                </script>
+            </div>
+            
+           
+        </section>
+    </div>
+    <footer>
+        <p>Arohan.intec &copy; 2023</p>
+        <div class="container">
+            <section id="social-media">
+                <h2>Follow Me</h2>
+                
+                    
+                <a href="https://wa.me/919967385254?text=we+you+are+free+call+me" target="_blank" color="white">Whatsapp</a>
+                <a href="https://www.instagram.com/shuklakishan629?igsh=aDdhOWd2czBkd25h" target="_blank" color="white">Instagram</a>
+                <a href="https://www.linkedin.com/in/kishan-shukla-806701261/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" color="white">LinkedIn</a>
+                <a href="https://github.com/kishan9229" target="_blank" color="white">GitHub</a>
+                
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
+    
+

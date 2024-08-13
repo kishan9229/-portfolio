@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f06, #4a90e2);
+            animation: gradient 15s ease infinite;
+            color: #fff;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px;
+        }
+
+        #about {
+            margin: 20px 0;
+        }
+
+        #about h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .about-content {
+            background: #fff;
+            color: #333;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .about-content h3 {
+            margin-top: 0;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>About Me</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <h3>Who I Am</h3>
+                <p>Hello! I'm <b>Kishan Shukla</b>, a passionate technologist and creative thinker with a keen interest in software development, web design, data analysis, etc.</p>
+                <button id="show-more">Show More</button>
+                <div id="hidden-content" style="display: none;">
+                    <p>My journey in technology began form class 9th when we had HTML lab and because of that I got intrest in this field, and it has been a thrilling adventure ever since. With a strong foundation in [mention your key skills, such as coding languages, frameworks, tools, etc.], I enjoy crafting solutions that are not only functional but also aesthetically pleasing and user-friendly.
+                    
+                        In addition to my technical skills, I have a deep appreciation for continuous learning and growth. This drive has led me to complete various certifications and participate in numerous projects that push the boundaries of what's possible. Whether it's exploring the latest in [mention any specific technologies or trends you are interested in, such as AI, blockchain, etc.] or refining my design sensibilities, I'm always eager to expand my horizons.
+                        
+                        Outside of my professional endeavors, I'm a [mention any hobbies or interests, such as "a photography enthusiast" or "an avid reader"], which often inspires my work and fuels my creativity. I believe that a well-rounded life enhances one's ability to innovate and think outside the box.
+                        
+                        Through this portfolio, I hope to showcase some of the projects and experiences that have shaped me as a professional. Each project reflects my dedication to excellence and my commitment to delivering value, whether through innovative solutions or engaging user experiences.
+                        
+                        I'm always open to new opportunities and collaborations, so if you're interested in working together or just want to connect, feel free to reach out. Let's create something amazing!</p>
+                    <button id="show-less">Show Less</button>
+                </div>
+                <script>
+                    document.getElementById('show-more').addEventListener('click', function() {
+                        document.getElementById('hidden-content').style.display = 'block';
+                        this.style.display = 'none';
+                        document.getElementById('show-less').style.display = 'block';
+                    });
+
+                    document.getElementById('show-less').addEventListener('click', function() {
+                        document.getElementById('hidden-content').style.display = 'none';
+                        this.style.display = 'none';
+                        document.getElementById('show-more').style.display = 'block';
+                    });
+                </script>
+
+                    
+                    
+            </div>
+            
+            <div class="about-content">
+                <h3>My Skills</h3>
+                <p>this is my skills</p>
+                <button id="show-more-skills">Show More</button>
+                <div id="hidden-skills" style="display: none;">
+                    <p>I have experience with a variety of programming languages and frameworks, including HTML, CSS, JavaScript, React, Node.js, and Python. I am always eager to learn new technologies and improve my skills.</p>
+                    <button id="show-less-skills">Show Less</button>
+                </div>
+                <script>
+                    document.getElementById('show-more-skills').addEventListener('click', function() {
+                        document.getElementById('hidden-skills').style.display = 'block';
+                        this.style.display = 'none';
+                        document.getElementById('show-less-skills').style.display = 'block';
+                    });
+
+                    document.getElementById('show-less-skills').addEventListener('click', function() {
+                        document.getElementById('hidden-skills').style.display = 'none';
+                        this.style.display = 'none';
+                        document.getElementById('show-more-skills').style.display = 'block';
+                    });
+                </script>
+                
+
+                    
+                    
+            </div>
+            <div class="about-content">
+                <h3>My Interests</h3>
+                <p>When I'm not coding, I enjoy reading books, hiking, and exploring new places.</p>
+                <button id="show-more-interests">Show More</button>
+                <div id="hidden-interests" style="display: none;">
+                    <p>I believe in continuous learning and personal growth, and I am always looking for new challenges to tackle.</p>
+                    <button id="show-less-interests">Show Less</button>
+                </div>
+                <script>
+                    document.getElementById('show-more-interests').addEventListener('click', function() {
+                        document.getElementById('hidden-interests').style.display = 'block';
+                        this.style.display = 'none';
+                        document.getElementById('show-less-interests').style.display = 'block';
+                    });
+
+                    document.getElementById('show-less-interests').addEventListener('click', function() {
+                        document.getElementById('hidden-interests').style.display = 'none';
+                        this.style.display = 'none';
+                        document.getElementById('show-more-interests').style.display = 'block';
+                    });
+                </script>
+            </div>
+        
+        </section>
+    </div>
+    <footer>
+        <p>Arohan.intec &copy; 2023</p>
+        <div class="container">
+            <section id="social-media">
+                <h2>Follow Me</h2>
+                
+                <a href="https://wa.me/919967385254?text=we+you+are+free+call+me" target="_blank" color="white">Whatsapp</a>
+                <a href="https://www.instagram.com/shuklakishan629?igsh=aDdhOWd2czBkd25h" target="_blank" color="white">Instagram</a>
+                <a href="https://www.linkedin.com/in/kishan-shukla-806701261/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" color="white">LinkedIn</a>
+                <a href="https://github.com/kishan9229" target="_blank" color="white">GitHub</a>
+                
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
